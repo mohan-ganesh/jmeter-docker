@@ -28,6 +28,6 @@ echo "*** current time is ${day} ${currentDate}"
 #-t — specifies the path to source .jmx script to run.
 #-JURL=www.abcdef.com 
 
-sh  jmeter -n -t /opt/apache-jmeter-5.4.3/code/${SCRIPTNAME} -JURL=${URL} -l /opt/apache-jmeter-5.4.3/code/test_output_${currentDay}_${currentEpoch}.csv
+sh  jmeter -n -t /opt/apache-jmeter-5.4.3/code/${SCRIPTNAME} -j jmeter.log -Jurl=${URL}   -l /opt/apache-jmeter-5.4.3/code/test_output_${currentDay}_${currentEpoch}.csv
 
 echo "********entry.sh process completed succesfully*******"

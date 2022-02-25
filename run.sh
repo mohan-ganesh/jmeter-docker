@@ -11,7 +11,7 @@ URL="$2"
 ##validate inputs
 if [ -z "$SCRIPTNAME" ] || [ -z "$URL" ]; then
     echo "Usage: $0 <scriptName>  <url>"
-    echo "Example: sample.jmx https://www.google.com"
+    echo "Example: sample.jmx www.google.com"
     exit 1
 fi
 
